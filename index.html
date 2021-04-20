@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-scope" content="profile email" />
     <meta
       name="google-signin-client_id"
       content="483228225913-7tmuhk2cicdd85nbo4nboaujmn6lr0sk.apps.googleusercontent.com"
     />
+    
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <title>Gmail Clone</title>
     <link
       rel="stylesheet"
@@ -39,7 +42,7 @@
           >
         </div>
         <div class="col-lg-6 mt-3">
-          <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
         </div>
       </div>
       <div class="row btn-list">
@@ -69,6 +72,5 @@
       </div>
     </div>
     <script src="./index.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </body>
 </html>
